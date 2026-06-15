@@ -6,7 +6,7 @@ import styles from '../styles/Symposium.module.css'
 import { useState } from 'react'
 import Image from 'next/image'
 import prefix from '../utils/prefix'
-import Gallery from '../../components/Gallery'
+import Gallery from '../components/Gallery'
 
 const schedule = {
   thursday: [
@@ -194,7 +194,10 @@ export default function Symposium() {
         </section>
       </main>
 
-      <Gallery photos={photos.coffeeHour} />
+      <section style={{ padding: '2.5rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
+        <h2 className={styles.sectionTitle}>Previous Symposia</h2>
+        <Gallery photos={galleryPhotos} />
+      </section>
 
       <Footer />
     </>
