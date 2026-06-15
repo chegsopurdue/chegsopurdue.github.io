@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
-  output: 'export',
-  trailingSlash: true,
   images: {
-    unoptimized: true, // required for static export
+    unoptimized: true,
   },
-  basePath: '/purdue-che-gso',
-  assetPrefix: '/purdue-che-gso/',
+  basePath: isProd ? '/purdue-che-gso' : '',
+  assetPrefix: isProd ? '/purdue-che-gso/' : '',
 }
 
 module.exports = nextConfig
