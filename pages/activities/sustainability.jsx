@@ -1,5 +1,14 @@
 // pages/activities/sustainability.jsx
 import ActivityLayout from '../../components/ActivityLayout'
+import Gallery from '../../components/Gallery'
+import prefix from '../../utils/prefix'
+
+const photos = [
+    `${prefix}/images/sustainability/arborday-1.JPEG`,
+    `${prefix}/images/sustainability/totebag.JPEG`,
+    `${prefix}/images/sustainability/highway.JPEG`,
+    `${prefix}/images/sustainability/arborday-2.JPEG`,
+  ]
 
 export default function Sustainability() {
   return (
@@ -25,29 +34,14 @@ export default function Sustainability() {
         </p>
         <ul>
           <li>Highway cleanup</li>
-          <li>Food bank volunteering</li>
           <li>Food drive</li>
           <li>Arbor Day tree planting</li>
-          <li>Clothing drive</li>
         </ul>
       </div>
 
       <div className="actSection">
-        <h2>Food Finders Food Bank</h2>
-        <p>
-          We enjoy volunteering at local Food Finders Food Banks. Pantry shifts
-          enable graduate students to directly help reduce food waste, provide
-          food assistance to those in need, and protect the environment through
-          community-based, multi-sector collaborations.
-        </p>
-        <h3>About Food Finders</h3>
-        <ul>
-          <li>Assisting Tippecanoe County and 15 surrounding counties since 1981</li>
-          <li>Providing food to 120 Partner Agencies</li>
-          <li>Distributes more than 9 million pounds of food annually</li>
-          <li>Headquartered in Lafayette, IN</li>
-          <li>Funded by United Way, foundations, grants, USDA, corporations, and individual donors</li>
-        </ul>
+        <h2>Gallery</h2>
+        <Gallery photos={photos} />
       </div>
 
       <div className="calendarBox">

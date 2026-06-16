@@ -1,5 +1,14 @@
 // pages/activities/sports.jsx
 import ActivityLayout from '../../components/ActivityLayout'
+import Gallery from '../../components/Gallery'
+import prefix from '../../utils/prefix'
+
+const photos = [
+    `${prefix}/images/sports/basketball.JPEG`,
+    `${prefix}/images/sports/soccer.JPEG`,
+    `${prefix}/images/sports/climbing.JPEG`,
+    `${prefix}/images/sports/bowling.JPEG`,
+  ]
 
 export default function Sports() {
   return (
@@ -25,6 +34,11 @@ export default function Sports() {
           <li><strong>Grad-lete of the Year</strong> — awarded to the most outstanding individual athlete</li>
           <li><strong>Athletically Activated Research Group of the Year</strong> — awarded to the most active research group</li>
         </ul>
+      </div>
+
+      <div className="actSection">
+        <h2>Gallery</h2>
+        <Gallery photos={photos} />
       </div>
 
       <div className="calendarBox">

@@ -1,5 +1,13 @@
 // pages/activities/outreach.jsx
 import ActivityLayout from '../../components/ActivityLayout'
+import Gallery from '../../components/Gallery'
+import prefix from '../../utils/prefix'
+
+const photos = [
+    `${prefix}/images/outreach/murdock-1.JPEG`,
+    `${prefix}/images/outreach/murdock-2.JPEG`,
+    `${prefix}/images/outreach/murdock-3.JPEG`,
+    `${prefix}/images/outreach/murdock-4.JPEG`,]
 
 export default function Outreach() {
   return (
@@ -31,13 +39,8 @@ export default function Outreach() {
       </div>
 
       <div className="actSection">
-        <h2>Winterization &amp; De-Trash the Wabash</h2>
-        <p>
-          Under these initiatives, we help the local West Lafayette–Lafayette
-          community through winter preparation activities and clean-up of the
-          Wabash River. These events are a great way to give back to the
-          community that hosts us during our time at Purdue.
-        </p>
+        <h2>Gallery</h2>
+        <Gallery photos={photos} />
       </div>
 
       <div className="calendarBox">

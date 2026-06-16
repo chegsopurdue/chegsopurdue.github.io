@@ -3,6 +3,19 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import styles from '../styles/Prospective.module.css'
+import Gallery from '../components/Gallery'
+import prefix from '../utils/prefix'
+
+const photos = [
+    `${prefix}/images/firstyear/blockparty-1.JPEG`,
+    `${prefix}/images/firstyear/blockparty-2.JPEG`,
+    `${prefix}/images/firstyear/blockparty-3.JPEG`,
+    `${prefix}/images/firstyear/picnic-1.JPEG`,
+    `${prefix}/images/firstyear/icecream-1.JPEG`,
+    `${prefix}/images/firstyear/icecream-2.JPEG`,
+    `${prefix}/images/firstyear/icecream-3.JPEG`,
+    `${prefix}/images/firstyear/icecream-4.JPEG`,
+  ]
 
 export default function Prospective() {
   return (
@@ -91,7 +104,11 @@ export default function Prospective() {
           </div>
         </section>
 
-        
+        <section style={{ padding: '2.5rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
+          <h2 className={styles.sectionTitle}>Gallery</h2>
+          <Gallery photos={photos} />
+        </section>
+
       </main>
 
       <Footer />

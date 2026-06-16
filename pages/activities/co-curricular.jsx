@@ -1,5 +1,14 @@
 // pages/activities/co-curricular.jsx
 import ActivityLayout from '../../components/ActivityLayout'
+import Gallery from '../../components/Gallery'
+import prefix from '../../utils/prefix'
+
+const photos = [
+    `${prefix}/images/cocurricular/faculty-1.JPEG`,
+    `${prefix}/images/cocurricular/faculty-2.JPEG`,
+    `${prefix}/images/cocurricular/truthbeauty-1.JPEG`,
+    `${prefix}/images/cocurricular/colloquium.JPEG`,
+  ]
 
 export default function CoCurricular() {
   return (
@@ -59,6 +68,11 @@ export default function CoCurricular() {
           opportunity for students to learn about things happening in STEM
           outside the scope of our own department.
         </p>
+      </div>
+
+      <div className="actSection">
+        <h2>Gallery</h2>
+        <Gallery photos={photos} />
       </div>
 
       <div className="calendarBox">
