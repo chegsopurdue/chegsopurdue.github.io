@@ -5,13 +5,6 @@ import Footer from '../components/Footer'
 import { officers } from '../data/site'
 import styles from '../styles/About.module.css'
 
-const groups = [
-  { key: 'top',     label: 'Leadership' },
-  { key: 'middle1', label: 'Officers' },
-  { key: 'middle2', label: 'Officers' },
-  { key: 'bottom',  label: 'Officers' },
-]
-
 export default function About() {
   return (
     <>
@@ -32,20 +25,14 @@ export default function About() {
           </p>
         </div>
 
-        {/* Officers by group */}
-        {groups.map(({ key }) => {
-          const members = officers.filter((o) => o.group === key)
-          if (!members.length) return null
-          return (
-            <section key={key} className={styles.section}>
-              <div className={styles.grid}>
-                {members.map((o) => (
-                  <OfficerCard key={o.email} officer={o} />
-                ))}
-              </div>
-            </section>
-          )
-        })}
+        {/* Officers */}
+        <section className={styles.section}>
+          <div className={styles.grid}>
+            {officers.map((o) => (
+              <OfficerCard key={o.email} officer={o} />
+            ))}
+          </div>
+        </section>
       </main>
 
       <Footer />
