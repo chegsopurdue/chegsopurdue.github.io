@@ -77,7 +77,8 @@ const cultural = {initials: 'DD',
                   role: 'Cultural Ambassador',    
                   email: 'durandd@purdue.edu',   
                   advisor: 'Dr. Kelly Schultz',
-                  photo: `${prefix}/images/board/dylan.jpeg` 
+                  photo: `${prefix}/images/board/dylan.jpeg`,
+                  bio: 'Dylan is from New Jersey and completed his undergraduate degree in Molecular Biology and Biochemistry from Rutgers University. He is a 2nd-year PhD student working with Dr. Kelly Schultz on microfibrillated cellulose for molecular delivery. In his free time, Dylan enjoys playing the piano, rock climbing, and swimming. He also knows three martial arts.', 
                 }
 
 const pgsg = {initials: 'AH', 
@@ -92,7 +93,7 @@ const firstYear1 = {initials: 'AF',
                     name: 'Ainslee Fogleman',     
                     role: 'First-Year Representative',         
                     email: 'afoglema@purdue.edu',  
-                    advisor: 'Dr. David Hibbitts',
+                    advisor: 'Dr. David Hibbitts and Dr. Rajamani Gounder',
                     photo: `${prefix}/images/board/ainslee1.jpg`, 
                     bio: 'Ainslee is from Connecticut and completed her undergraduate degree in Chemical Engineering at the University of Utah. She is a 2nd-year PhD student working with Dr. David Hibbitts and Dr. Rajamani Gounder on converting alkanes to aromatics on metal zeolites using computational methods. In her free time, Ainslee enjoys painting, crafting, and baking.',
                   }
