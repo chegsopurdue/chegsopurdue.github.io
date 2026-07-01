@@ -87,7 +87,7 @@ const pgsg = {initials: 'AH',
                   email: 'ahriblja@purdue.edu',   
                   advisor: 'Dr. David Bernal',
                   photo: `${prefix}/images/board/anja3.jpeg`,
-                  bio: 'Anja is from Novi Sad, Serbia and completed her undergraduate in both Physics and Chemistry at Dillard Unicersity. She is a 2nd-year PhD student working with Dr. David Bernal on quantum physics-informed neural networks. Anja was a student athlete in college and she likes to read and bake.' 
+                  bio: 'Anja is from Novi Sad, Serbia and completed her undergraduate in both Physics and Chemistry at Dillard University. She is a 2nd-year PhD student working with Dr. David Bernal on quantum physics-informed neural networks. Anja was a student athlete in college and she likes to read and bake.' 
                 }
 
 const firstYear1 = {initials: 'AF', 
@@ -104,7 +104,8 @@ const firstYear2 = {initials: 'GG',
                     role: 'First-Year Representative',         
                     email: 'grego131@purdue.edu',   
                     advisor: 'Dr. Rajamani Gounder',
-                    photo: `${prefix}/images/board/garrett2.jpeg` 
+                    photo: `${prefix}/images/board/garrett2.jpeg`,
+                    bio: 'Garrett is from Harrisonburg, Virginia and completed his undergraduate degree in Chemical and Biomolecular Engineering at Johns Hopkins University. He is a 2nd-year PhD student working with Dr. Rajamani Gounder on alkane dehydrocyclization over bifunctional zeolite catalysts. In his free time, Garrett enjoys cooking, lifting weights, listening to records, and hanging out with his two cats.', 
                   }
 
 const communications = {initials: 'RR',
